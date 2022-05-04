@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraPosition : MonoBehaviour
 {
+
+    Vector3 cameraPos;
+    Vector3 cameraVec;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +16,10 @@ public class CameraPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-            Debug.Log("Timon's Camera" + Camera.main.transform.position);
-            Debug.Log("Camera Vector" + Camera.main.transform.forward);
+            cameraPos = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
+            cameraVec = new Vector3(Camera.main.transform.forward.x, Camera.main.transform.forward.y, Camera.main.transform.forward.z);
+            Debug.Log("Timon's Camera" + cameraPos);
+            Debug.Log("Camera Vector" + cameraVec);
 
         
     }
