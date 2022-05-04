@@ -58,6 +58,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "2.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.probuilder": {
       "version": "4.5.2",
       "depth": 0,
@@ -182,6 +189,16 @@
         "com.unity.render-pipelines.core": "10.8.1"
       },
       "url": "https://packages.unity.com"
+    },
+    "org.khronos.unitygltf": {
+      "version": "https://github.com/prefrontalcortex/UnityGLTF.git?path=/UnityGLTF/Assets/UnityGLTF",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0",
+        "com.unity.modules.imageconversion": "1.0.0"
+      },
+      "hash": "f1d97c612e82d487d6361e1a4b02e05858f7da2d"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
