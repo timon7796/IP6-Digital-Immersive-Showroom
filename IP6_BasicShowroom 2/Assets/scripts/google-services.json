@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "212650818054",
+    "firebase_url" : "https://testing-realtime-unity-default-rtdb.europe-west1.firebasedatabase.app/",
+    "project_id": "testing-realtime-unity",
+    "storage_bucket": "testing-realtime-unity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212650818054:android:2d96ee0b65b32bb9c2a187",
+        "android_client_info": {
+          "package_name": "com.game1.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212650818054-q8ioqqk4904k57vg708ivfeo5ji78166.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQPKugr3Vr4FaxIoic_E_MHHCq-XdguV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212650818054-q8ioqqk4904k57vg708ivfeo5ji78166.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "212650818054-b9if3482dn3rfd3mrj4okdsmdtl6qrdb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DefaultCompany.IP6-BasicShowroom"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

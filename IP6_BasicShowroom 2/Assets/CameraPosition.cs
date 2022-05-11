@@ -5,15 +5,33 @@ using System.IO;
 
 public class CameraPosition : MonoBehaviour
 {
-    public Vector3 cameraPos = new Vector3();
-        public Vector3 cameraVec = new Vector3();
+    public float cameraPosX;
+    public float cameraPosY;
+    public float cameraPosZ;
+    public float cameraVecX;
+    public float cameraVecY;
+    public float cameraVecZ;
     // Update is called once per frame
     void Update()
     {
-           cameraPos = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
-           cameraVec = new Vector3(Camera.main.transform.forward.x, Camera.main.transform.forward.y, Camera.main.transform.forward.z);
-            Debug.Log("Timon's Camera: " + cameraPos);
-            Debug.Log("Camera Vector: " + cameraVec);
+        cameraPosX = transform.position.x;
+        cameraPosY = Camera.main.transform.position.y;
+        cameraPosZ = Camera.main.transform.position.z;
+
+        cameraVecX = Camera.main.transform.forward.x;
+        cameraVecY = Camera.main.transform.forward.y;
+        cameraVecZ = Camera.main.transform.forward.z;
+            
+         Debug.Log("Pos X" + cameraPosX);
+        // Debug.Log("Pos Y" + cameraPosY);
+        // Debug.Log("Pos Z" + cameraPosZ);
+        // Debug.Log("Vec X" + cameraVecX);
+        // Debug.Log("Vec Y" + cameraVecY);
+        // Debug.Log("Vec Z" + cameraVecZ);
+
+
+
+        
         
     } 
 
