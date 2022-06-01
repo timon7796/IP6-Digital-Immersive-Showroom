@@ -6,16 +6,16 @@ using UnityEngine.UI;
 
 public class FirstPersonMovement : MonoBehaviour
 {
-    public float speed = 5;
+    private float speed = 5;
 
     DatabaseReference reference;
-    [SerializeField] float rigidbodyX;
-    [SerializeField] float rigidbodyY;
-    [SerializeField] float rigidbodyZ;
+    [SerializeField] private float rigidbodyX;
+    [SerializeField] private float rigidbodyY;
+    [SerializeField] private float rigidbodyZ;
 
-    float rigidbodyXkopie;
-    float rigidbodyYkopie;
-    float rigidbodyZkopie;
+    private float rigidbodyXkopie;
+    private float rigidbodyYkopie;
+    private float rigidbodyZkopie;
 
     private string speicherX;
     private string speicherY;
@@ -57,28 +57,28 @@ public class FirstPersonMovement : MonoBehaviour
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
         }
 
-        if(Input.GetKey(space))
 
+      if(Input.GetKey(space))
         {
-
             reference.Child("Body").Child("Position").Child("rigidbodyX").GetValueAsync().ContinueWith(task =>
             {
-            if(task.IsCompleted)
-            {
-                //Debug.Log("retrived");
-                DataSnapshot snapshot = task.Result;
-                //Debug.Log(snapshot.Value.ToString());
-                speicherX = snapshot.Value.ToString();
-                
-            }
-            else
-            {
-                Debug.Log("not retrived");
-            }
+                if(task.IsCompleted)
+                {
+                    DataSnapshot snapshot = task.Result;
+                    Debug.Log("snapshot" + snapshot.Value.ToString());
+                    speicherX = snapshot.Value.ToString();
+                    
+                }
+                else
+                {
+                    Debug.Log("not retrived");  
+                }
             
             }); 
             rigidbodyXkopie = float.Parse(speicherX);
-
+            Debug.Log(" float parse" + float.Parse(speicherX));
+            Debug.Log("rigidbodyX Kopie" + rigidbodyXkopie);
+            
             reference.Child("Body").Child("Position").Child("rigidbodyY").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
@@ -95,7 +95,7 @@ public class FirstPersonMovement : MonoBehaviour
                 }
                 
             }); 
-            rigidbodyYkopie = float.Parse(speicherY);
+            rigidbodyYkopie = (float)float.Parse(speicherY);
 
             reference.Child("Body").Child("Position").Child("rigidbodyZ").GetValueAsync().ContinueWith(task =>
             {
@@ -115,35 +115,30 @@ public class FirstPersonMovement : MonoBehaviour
             rigidbodyZkopie = float.Parse(speicherZ);
             
             // Apply movement.
-        //rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
-            rigidbody.velocity = transform.rotation *  new Vector3(rigidbodyXkopie, rigidbodyYkopie, rigidbodyZkopie);
-
-            Debug.Log("Kopie X" + rigidbodyXkopie);
-            Debug.Log("Kopie Y" + rigidbodyXkopie);
-            Debug.Log("Kopie Z" + rigidbodyXkopie);
-
+            //rigidbody.velocity = transform.rotation * new Vector3(rigidbodyXkopie, rigidbodyYkopie, rigidbodyZkopie);
         }
 
         else
 
         {
             // Get targetVelocity from input.
-            Vector2 targetVelocity = new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+           Vector2 targetVelocity = new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
 
-            rigidbodyX = targetVelocity.x;
-            rigidbodyY = rigidbody.velocity.y;
-            rigidbodyZ = targetVelocity.y;
+            rigidbodyX = GameObject.Find("First Person Controller Minimal").transform.position.x;
+            rigidbodyY = GameObject.Find("First Person Controller Minimal").transform.position.y;
+            rigidbodyZ = GameObject.Find("First Person Controller Minimal").transform.position.z;
 
-            reference.Child("Body").Child("Position").Child("rigidbodyX").SetValueAsync(rigidbodyX.ToString());
-            Debug.Log("string X: " + rigidbodyX.ToString());
-            reference.Child("Body").Child("Position").Child("rigidbodyY").SetValueAsync(rigidbodyY.ToString());
-            Debug.Log("string Y: " + rigidbodyY.ToString());
-            reference.Child("Body").Child("Position").Child("rigidbodyZ").SetValueAsync(rigidbodyZ.ToString());
-            Debug.Log("string Z: " + rigidbodyZ.ToString());
+            Debug.Log("rigidbodyX" + rigidbodyX);
+
+
+            reference.Child("Body").Child("Position").Child("rigidbodyX").SetValueAsync(rigidbodyX);
+            reference.Child("Body").Child("Position").Child("rigidbodyY").SetValueAsync(rigidbodyY);
+            reference.Child("Body").Child("Position").Child("rigidbodyZ").SetValueAsync(rigidbodyZ);
+
+         
 
             // Apply movement.
             rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
-            //rigidbody.velocity = transform.rotation *  new Vector3(rigidbodyX, rigidbodyY, rigidbodyZ);
         }
         
     }

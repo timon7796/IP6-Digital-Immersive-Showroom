@@ -241,7 +241,7 @@ public class FirstPersonLook : MonoBehaviour
             transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
             character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
 
-            velocityY = -velocity.y;
+            velocityY = velocity.y;
             vecRightX = Vector3.right.x;
             vecRightY = Vector3.right.y;
             vecRightZ = Vector3.right.z;
