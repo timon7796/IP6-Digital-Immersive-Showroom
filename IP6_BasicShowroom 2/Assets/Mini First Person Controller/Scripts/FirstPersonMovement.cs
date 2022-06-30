@@ -65,7 +65,6 @@ public class FirstPersonMovement : MonoBehaviour
                 if(task.IsCompleted)
                 {
                     DataSnapshot snapshot = task.Result;
-                    Debug.Log("snapshot" + snapshot.Value.ToString());
                     speicherX = snapshot.Value.ToString();
                     
                 }
@@ -76,8 +75,6 @@ public class FirstPersonMovement : MonoBehaviour
             
             }); 
             rigidbodyXkopie = float.Parse(speicherX);
-            Debug.Log(" float parse" + float.Parse(speicherX));
-            Debug.Log("rigidbodyX Kopie" + rigidbodyXkopie);
             
             reference.Child("Body").Child("Position").Child("rigidbodyY").GetValueAsync().ContinueWith(task =>
             {
@@ -127,9 +124,6 @@ public class FirstPersonMovement : MonoBehaviour
             rigidbodyX = GameObject.Find("First Person Controller Minimal").transform.position.x;
             rigidbodyY = GameObject.Find("First Person Controller Minimal").transform.position.y;
             rigidbodyZ = GameObject.Find("First Person Controller Minimal").transform.position.z;
-
-            Debug.Log("rigidbodyX" + rigidbodyX);
-
 
             reference.Child("Body").Child("Position").Child("rigidbodyX").SetValueAsync(rigidbodyX);
             reference.Child("Body").Child("Position").Child("rigidbodyY").SetValueAsync(rigidbodyY);

@@ -214,13 +214,6 @@ public class FirstPersonLook : MonoBehaviour
             }); 
             vecUpZkopie = float.Parse(speicherUpZ);
 
-
-            //Debug.Log("veloY:" + -velocityYkopie);
-            //Debug.Log("veloX:" + velocityXkopie);
-
-        
-
-
             // Get smooth velocity.
             // Rotate camera up-down and controller left-right from velocity.
             transform.localRotation = Quaternion.AngleAxis(-velocityYkopie, new Vector3(vecRightXkopie, vecRightYkopie, vecRightZkopie));
