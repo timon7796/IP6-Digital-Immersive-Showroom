@@ -30,14 +30,13 @@ public class klappeTest : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         startQuaternion = transform.rotation;
         reference = FirebaseDatabase.DefaultInstance.RootReference;  
-       reference.Child("Body").Child("Animation").Child("klappeIsOpen").SetValueAsync("True");
     }
  
     // Update is called once per frame
     void Update() {   
 
         if(Input.GetKey(space)){
-           reference.Child("Body").Child("Animation").Child("klappeIsOpen").GetValueAsync().ContinueWith(task =>
+           reference.Child("Body").Child("Animation").Child("klappeRotationZ").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
                 {
@@ -77,7 +76,7 @@ public class klappeTest : MonoBehaviour
                 keyTwoIsPressed = false;
                 isOpen = true;
             }    
-            reference.Child("Body").Child("Animation").Child("klappeRotationX").SetValueAsync(transform.eulerAngles.z.ToString()); 
+            reference.Child("Body").Child("Animation").Child("klappeRotationZ").SetValueAsync(transform.eulerAngles.z.ToString()); 
 
         }
                 
