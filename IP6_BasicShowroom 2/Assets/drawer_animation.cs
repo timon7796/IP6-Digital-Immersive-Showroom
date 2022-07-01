@@ -8,7 +8,7 @@ public class drawer_animation : MonoBehaviour
 {
 
     DatabaseReference reference;
-    public float movementSpeed = 0.001f;
+    private float movementSpeed = 10f;
     private float count= 0f;
     private bool keyOneIsPressed;
 
@@ -21,8 +21,8 @@ public class drawer_animation : MonoBehaviour
     public KeyCode space = KeyCode.Space;
  
     private Rigidbody rb;
-    private Vector3 endPosition = new Vector3(382.7423f, 1.485f, 109.136f);
-    private Vector3 startPosition = new Vector3(381.877f, 1.485f, 109.512f);
+    private Vector3 endPosition = new Vector3(382.116f, 1.146f, 109.998f);
+    private Vector3 startPosition = new Vector3(381.171f, 1.146f, 110.379f);
     // Use this for initialization
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -71,7 +71,7 @@ public class drawer_animation : MonoBehaviour
             }); 
             rotationZ = float.Parse(positionZ);
 
-            Vector3 newPosition = new Vector3(rotationX, 1.485f, rotationZ);
+            Vector3 newPosition = new Vector3(rotationX, 1.146f, rotationZ);
             rb.MovePosition(newPosition);
         }
         else{
