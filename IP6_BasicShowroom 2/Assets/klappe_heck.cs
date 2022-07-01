@@ -4,7 +4,7 @@ using UnityEngine;
 using Firebase.Database;
 using UnityEngine.UI;
 
-public class klappeTest : MonoBehaviour
+public class klappe_heck : MonoBehaviour
 {
     DatabaseReference reference;
     private Quaternion startQuaternion;
@@ -37,16 +37,16 @@ public class klappeTest : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         startQuaternion = transform.rotation;
         reference = FirebaseDatabase.DefaultInstance.RootReference;  
-         reference.Child("Body").Child("Animation").Child("klappeRotationX").SetValueAsync("");
-            reference.Child("Body").Child("Animation").Child("klappeRotationY").SetValueAsync("");
-            reference.Child("Body").Child("Animation").Child("klappeRotationZ").SetValueAsync(""); 
+         reference.Child("Body").Child("Animation").Child("heckKlappeRotationX").SetValueAsync("");
+            reference.Child("Body").Child("Animation").Child("heckKlappeRotationY").SetValueAsync("");
+            reference.Child("Body").Child("Animation").Child("heckKlappeRotationZ").SetValueAsync(""); 
     }
  
     // Update is called once per frame
     void Update() {   
 
         if(Input.GetKey(space)){
-           reference.Child("Body").Child("Animation").Child("klappeRotationX").GetValueAsync().ContinueWith(task =>
+           reference.Child("Body").Child("Animation").Child("heckKlappeRotationX").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
                 {
@@ -65,7 +65,7 @@ public class klappeTest : MonoBehaviour
             }); 
             rotationX = float.Parse(eulerAngelX);
 
-            reference.Child("Body").Child("Animation").Child("klappeRotationY").GetValueAsync().ContinueWith(task =>
+            reference.Child("Body").Child("Animation").Child("heckKlappeRotationY").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
                 {
@@ -84,7 +84,7 @@ public class klappeTest : MonoBehaviour
             }); 
             rotationY = float.Parse(eulerAngelY);
 
-            reference.Child("Body").Child("Animation").Child("klappeRotationZ").GetValueAsync().ContinueWith(task =>
+            reference.Child("Body").Child("Animation").Child("heckKlappeRotationZ").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
                 {
@@ -107,29 +107,28 @@ public class klappeTest : MonoBehaviour
         }
         else
         {
-            if(Input.GetKeyDown(KeyCode.Alpha2))
+            if(Input.GetKeyDown(KeyCode.Alpha3))
             {
                 keyTwoIsPressed = true;
             }
 
             if((count % 2f == 0) && keyTwoIsPressed){
-                transform.localEulerAngles = new Vector3(0.2f, 112.6f, 0.91f);
-                
+                transform.localEulerAngles = new Vector3(0f, 24.76f, -1.6f);
                 count++;
                 keyTwoIsPressed = false;
                 isOpen = false;
             }
             else if(keyTwoIsPressed)
             {
-                transform.localEulerAngles = new Vector3(-2.4f, 114.7f, -67.7f);
+                transform.localEulerAngles = new Vector3(0f, 24.76f, -91.65f);
                 count++;
                 keyTwoIsPressed = false;
                 isOpen = true;
             }    
 
-            reference.Child("Body").Child("Animation").Child("klappeRotationX").SetValueAsync(transform.eulerAngles.x.ToString());
-            reference.Child("Body").Child("Animation").Child("klappeRotationY").SetValueAsync(transform.eulerAngles.y.ToString());
-            reference.Child("Body").Child("Animation").Child("klappeRotationZ").SetValueAsync(transform.eulerAngles.z.ToString()); 
+            reference.Child("Body").Child("Animation").Child("heckKlappeRotationX").SetValueAsync(transform.eulerAngles.x.ToString());
+            reference.Child("Body").Child("Animation").Child("heckKlappeRotationY").SetValueAsync(transform.eulerAngles.y.ToString());
+            reference.Child("Body").Child("Animation").Child("heckKlappeRotationZ").SetValueAsync(transform.eulerAngles.z.ToString()); 
 
         }
                 

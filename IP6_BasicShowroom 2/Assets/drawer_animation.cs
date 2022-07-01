@@ -21,8 +21,8 @@ public class drawer_animation : MonoBehaviour
     public KeyCode space = KeyCode.Space;
  
     private Rigidbody rb;
-    private Vector3 endPosition = new Vector3(382.116f, 1.146f, 109.998f);
-    private Vector3 startPosition = new Vector3(381.171f, 1.146f, 110.379f);
+    private Vector3 endPosition = new Vector3(382.1877f, 1.145f, 109.9784f);
+    private Vector3 startPosition = new Vector3(381.179f, 1.145f, 110.474f);
     // Use this for initialization
     void Start() {
         rb = GetComponent<Rigidbody>();
