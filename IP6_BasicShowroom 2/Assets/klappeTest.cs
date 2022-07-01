@@ -44,6 +44,7 @@ public class klappeTest : MonoBehaviour
                     DataSnapshot snapshot = task.Result;
                     //Debug.Log(snapshot.Value.ToString());
                     eulerAngelZ = snapshot.Value.ToString();
+                    Debug.Log("euler Z " +eulerAngelZ);
                     
                 }
                 else

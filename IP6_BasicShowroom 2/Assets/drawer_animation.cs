@@ -41,6 +41,7 @@ public class drawer_animation : MonoBehaviour
                     DataSnapshot snapshot = task.Result;
                     //Debug.Log(snapshot.Value.ToString());
                     positionX = snapshot.Value.ToString();
+                    Debug.Log("position X " +positionX);
                     
                 }
                 else
@@ -59,6 +60,7 @@ public class drawer_animation : MonoBehaviour
                     DataSnapshot snapshot = task.Result;
                     //Debug.Log(snapshot.Value.ToString());
                     positionZ = snapshot.Value.ToString();
+                     Debug.Log("position Z " + positionZ);
                     
                 }
                 else
