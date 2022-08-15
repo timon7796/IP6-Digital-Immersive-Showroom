@@ -57,9 +57,11 @@ public class FirstPersonMovement : MonoBehaviour
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
         }
 
-
-      if(Input.GetKey(space))
+      //Listen if spacebar is pressed
+     if(Input.GetKey(space))
         {
+            
+            /* Getting the value of the rigidbodyX from the database and storing it in a variable. */
             reference.Child("Body").Child("Position").Child("rigidbodyX").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
@@ -74,8 +76,9 @@ public class FirstPersonMovement : MonoBehaviour
                 }
             
             }); 
-            rigidbodyXkopie = float.Parse(speicherX);
+            rigidbodyXkopie = float.Parse(speicherX); 
             
+            /* Getting the value of the rigidbodyY from the database and storing it in a variable. */
             reference.Child("Body").Child("Position").Child("rigidbodyY").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
@@ -94,6 +97,7 @@ public class FirstPersonMovement : MonoBehaviour
             }); 
             rigidbodyYkopie = (float)float.Parse(speicherY);
 
+           /* Getting the value of the rigidbodyZ from the database and storing it in a variable. */
             reference.Child("Body").Child("Position").Child("rigidbodyZ").GetValueAsync().ContinueWith(task =>
             {
                 if(task.IsCompleted)
@@ -121,10 +125,13 @@ public class FirstPersonMovement : MonoBehaviour
             // Get targetVelocity from input.
            Vector2 targetVelocity = new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
 
+           
+           /* Getting the position of the rigidbody and storing it in a variable. */
             rigidbodyX = GameObject.Find("First Person Controller Minimal").transform.position.x;
             rigidbodyY = GameObject.Find("First Person Controller Minimal").transform.position.y;
             rigidbodyZ = GameObject.Find("First Person Controller Minimal").transform.position.z;
-
+            
+            /* Pushing the position of the rigidbody to the database. */
             reference.Child("Body").Child("Position").Child("rigidbodyX").SetValueAsync(rigidbodyX);
             reference.Child("Body").Child("Position").Child("rigidbodyY").SetValueAsync(rigidbodyY);
             reference.Child("Body").Child("Position").Child("rigidbodyZ").SetValueAsync(rigidbodyZ);

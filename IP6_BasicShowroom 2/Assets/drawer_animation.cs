@@ -74,12 +74,17 @@ public class drawer_animation : MonoBehaviour
             Vector3 newPosition = new Vector3(rotationX, 1.146f, rotationZ);
             rb.MovePosition(newPosition);
         }
+        /* This is the code that is used to move the drawer back and forth. */
         else{
 
+            /* This is checking if the key 1 is pressed. If it is pressed, then the keyOneIsPressed is
+            set to true. */
             if(Input.GetKeyDown(KeyCode.Alpha1)){
                 keyOneIsPressed = true;
             }
 
+            /* This is checking if the count is even and if the keyOneIsPressed is true. If it is true,
+            then the drawer will move to the endPosition. */
             if((count % 2f == 0) && keyOneIsPressed){
                 if(rb.position != endPosition) {
                     Vector3 newPosition = Vector3.MoveTowards(rb.position, endPosition, movementSpeed);
@@ -88,8 +93,16 @@ public class drawer_animation : MonoBehaviour
                     keyOneIsPressed = false;
                 }
             }   
+            /// <summary>
+            /// If the player presses the key that corresponds to the first position, the player will
+            /// move to the first position
+            /// </summary>
+            /// <param name="keyOneIsPressed">This is a boolean that is set to true when the player
+            /// presses the key.</param>
             else if(keyOneIsPressed)
             {
+                /* This is checking if the position of the drawer is not equal to the startPosition. If
+                it is not equal, then the drawer will move to the startPosition. */
                 if(rb.position != startPosition) {
                     Vector3 newPosition = Vector3.MoveTowards(rb.position, startPosition, movementSpeed);
                     rb.MovePosition(newPosition);
@@ -99,6 +112,8 @@ public class drawer_animation : MonoBehaviour
 
               
             }  
+            /* This is setting the value of the drawerPositionX and drawerPositionZ to the position of
+            the drawer. */
             reference.Child("Body").Child("Animation").Child("drawerPositionX").SetValueAsync(rb.position.x.ToString());
             reference.Child("Body").Child("Animation").Child("drawerPositionZ").SetValueAsync(rb.position.z.ToString()); 
         }
