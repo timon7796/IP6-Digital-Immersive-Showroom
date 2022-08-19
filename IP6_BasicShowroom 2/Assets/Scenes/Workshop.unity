@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5419.134, g: 3485.7812, b: 2777.1094, a: 1}
+  m_IndirectSpecularColor: {r: 5049.7954, g: 2827.7002, b: 1518.5876, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,9 +134,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -199,9 +203,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -266,6 +274,7 @@ GameObject:
   - component: {fileID: 40690288}
   - component: {fileID: 40690287}
   - component: {fileID: 40690286}
+  - component: {fileID: 40690291}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -566,8 +575,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &40690291
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40690285}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 33c3558a6d4ee4058b68dd6c1b853789, type: 2}
 --- !u!1001 &65986922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -577,7 +595,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -622,6 +640,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
       propertyPath: m_Name
       value: barrel_03_4k (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
@@ -697,9 +719,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -797,7 +823,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &323742309
 PrefabInstance:
@@ -810,9 +836,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -875,9 +905,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetDDWalledFull04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -956,9 +990,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetDDWalledFull04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1244,7 +1282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &450325862
 MonoBehaviour:
@@ -1625,6 +1663,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 723abf48ef9c1425f87eb15acae67419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!45 &615592428
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615592422}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 33c3558a6d4ee4058b68dd6c1b853789, type: 2}
 --- !u!1001 &631007016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1635,6 +1682,10 @@ PrefabInstance:
     - target: {fileID: 100018, guid: 7a14b3060165a0646b620baf99a76c04, type: 3}
       propertyPath: m_Name
       value: Lift
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 7a14b3060165a0646b620baf99a76c04, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7a14b3060165a0646b620baf99a76c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1662,7 +1713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 7a14b3060165a0646b620baf99a76c04, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 7a14b3060165a0646b620baf99a76c04, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1715,7 +1766,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1a139b1f938194228b3fb1a6a1abd973, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1a139b1f938194228b3fb1a6a1abd973, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1760,6 +1811,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1a139b1f938194228b3fb1a6a1abd973, type: 3}
       propertyPath: m_Name
       value: Barrel_01_4k (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1a139b1f938194228b3fb1a6a1abd973, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a139b1f938194228b3fb1a6a1abd973, type: 3}
@@ -1935,7 +1990,7 @@ Transform:
   m_LocalScale: {x: 12.71, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!43 &738891801
 Mesh:
@@ -1943,7 +1998,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23028
+  m_Name: pb_Mesh23036
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2170,9 +2225,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2235,6 +2294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Folding Table and Chair FBX (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.832
@@ -2269,7 +2332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2394,7 +2457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4777879770812434, guid: 8d82318b08a2b0a4796251e50274bce0, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4777879770812434, guid: 8d82318b08a2b0a4796251e50274bce0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2402,7 +2465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4777879770812434, guid: 8d82318b08a2b0a4796251e50274bce0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.36600018
+      value: 0.374
       objectReference: {fileID: 0}
     - target: {fileID: 4777879770812434, guid: 8d82318b08a2b0a4796251e50274bce0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2453,9 +2516,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2599,7 +2666,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &947847749
 MonoBehaviour:
@@ -2755,7 +2822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9205271801194951685, guid: 81fcd91bd8dd2498dbb06e25a3c9c2c9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9205271801194951685, guid: 81fcd91bd8dd2498dbb06e25a3c9c2c9, type: 3}
       propertyPath: m_LocalScale.x
@@ -2775,7 +2842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9205271801194951685, guid: 81fcd91bd8dd2498dbb06e25a3c9c2c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8431345
+      value: 1.818
       objectReference: {fileID: 0}
     - target: {fileID: 9205271801194951685, guid: 81fcd91bd8dd2498dbb06e25a3c9c2c9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2822,9 +2889,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetDDWalledFull04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2903,9 +2974,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2968,9 +3043,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3033,9 +3112,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetDDWalledFull04
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3114,6 +3197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Folding Table and Chair FBX
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.832
@@ -3148,7 +3235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: e005deb92065cd74aad34a488d504a8b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3230,9 +3317,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetDDWalledFull04 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3311,9 +3402,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetDDWalledFull04 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 2cb07a643d6539c4989b8c17a01e8530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3392,9 +3487,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3457,9 +3556,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3589,9 +3692,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3654,9 +3761,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3719,9 +3830,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3784,9 +3899,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3849,9 +3968,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3914,9 +4037,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MetalCabinetOpen02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 09fd826f68fbfa548b1161b5bf4e738b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3985,6 +4112,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!45 &2051267582
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051267579}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 33c3558a6d4ee4058b68dd6c1b853789, type: 2}
 --- !u!114 &2051267586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4003,6 +4139,15 @@ MonoBehaviour:
   cameraVecX: 0
   cameraVecY: 0
   cameraVecZ: 0
+--- !u!45 &2051267590
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051267579}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 33c3558a6d4ee4058b68dd6c1b853789, type: 2}
 --- !u!1001 &2054702021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4012,7 +4157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4057,6 +4202,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
       propertyPath: m_Name
       value: barrel_03_4k
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8e6200a7ed784df5841857b2b89f81a, type: 3}
@@ -4148,12 +4297,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5222740939418225544, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222740939418225544, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalScale.x
@@ -4210,6 +4363,10 @@ PrefabInstance:
     - target: {fileID: 5241267463746980526, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_Name
       value: First Person Controller Minimal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241267463746980526, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5256384803381100468, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_HDR
