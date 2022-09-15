@@ -116,7 +116,7 @@ public class FirstPersonMovement : MonoBehaviour
             rigidbodyZkopie = float.Parse(speicherZ);
             
             // Apply movement.
-            //rigidbody.velocity = transform.rotation * new Vector3(rigidbodyXkopie, rigidbodyYkopie, rigidbodyZkopie);
+            rigidbody.velocity = transform.rotation * new Vector3(rigidbodyXkopie, rigidbodyYkopie, rigidbodyZkopie);
         }
 
         else
