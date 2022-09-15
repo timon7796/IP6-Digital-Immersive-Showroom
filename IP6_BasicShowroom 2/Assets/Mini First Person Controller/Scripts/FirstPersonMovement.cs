@@ -95,7 +95,7 @@ public class FirstPersonMovement : MonoBehaviour
                 }
                 
             }); 
-            rigidbodyYkopie = (float)float.Parse(speicherY);
+            rigidbodyYkopie = float.Parse(speicherY);
 
            /* Getting the value of the rigidbodyZ from the database and storing it in a variable. */
             reference.Child("Body").Child("Position").Child("rigidbodyZ").GetValueAsync().ContinueWith(task =>
@@ -114,9 +114,12 @@ public class FirstPersonMovement : MonoBehaviour
                 
             }); 
             rigidbodyZkopie = float.Parse(speicherZ);
-            
+            Debug.Log("rigidbodyXkopie " + rigidbodyXkopie);
+             Debug.Log("rigidbodyYkopie " + rigidbodyYkopie);
+              Debug.Log("rigidbodyZkopie " + rigidbodyZkopie);
             // Apply movement.
-            rigidbody.velocity = transform.rotation * new Vector3(rigidbodyXkopie, rigidbodyYkopie, rigidbodyZkopie);
+            //rigidbody.velocity = new Vector3(rigidbodyXkopie, rigidbodyYkopie, rigidbodyZkopie);
+            rigidbody.position = new Vector3(rigidbodyXkopie, rigidbodyYkopie, rigidbodyZkopie);
         }
 
         else
